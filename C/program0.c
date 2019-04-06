@@ -1,12 +1,9 @@
 #include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+#define CALC (4.0f/3.0f)
 
 int main(void) {
-    for(long long int i = 1; ; i *= 2) {
-        if(i == 0) {
-            break;
-        }
-        printf("%lli\n", i);
-    }
+    float radius = 10.0f;
+    float volume = (CALC * 3.14159265359 * (radius * radius * radius));
+    printf("The volume of a sphere with a radius of %.1f is %.2f\n", radius, volume);
+    return 0;
 }
