@@ -1,6 +1,8 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
+#include <iostream>
+
 typedef int hp;
 
 class entity {
